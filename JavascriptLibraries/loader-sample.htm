@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>loader</title>
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+      <style>
+          .loader-progress {
+              position: absolute;
+              height: 3px;
+          }
+          .loader-progress-bar {
+              height: 100%;
+              background: #d9534f;
+              box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+              transition: width .6s ease;
+          }
+      </style>
+  </head>
+  <body>
+	<div class="container">
+	    <h1>Loader</h1>
+        <p>Lazy loading content with faux progress bar.</p>
+  
+	    <div class="row">
+	        <div class="col-md-12">
+                <div data-toggle="loader" data-url="/content/random?r=1"></div>
+	        </div>
+	    </div>
+        
+	    <div class="row">
+	        <div class="col-md-6">
+                <div data-toggle="loader" data-url="/content/random?r=2"></div>
+	        </div>
+	        <div class="col-md-3">
+                <div data-toggle="loader" data-url="/content/random?r=3"></div>
+	        </div>
+	        <div class="col-md-3">
+                <div data-toggle="loader" data-url="/content/random?r=4"></div> 
+	        </div>
+	    </div>
+  
+	</div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="/Scripts/loader.js"></script>
+  </body>
+</html>
